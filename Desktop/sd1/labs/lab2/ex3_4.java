@@ -1,3 +1,11 @@
+/**
+   * file: ex3_4.java
+   * author: Olive Shannon
+   * course: CMPT 220
+   * assignment: lab 2
+   * due date: Feburary 16th, 2017
+   * version: 1.0
+   */
 public class ex3_4 {
   public static void main(String[] args) {
   	int month = (int) ((Math.random()*12) +1);

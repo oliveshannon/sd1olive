@@ -1,3 +1,11 @@
+/**
+   * file: ex2_1.java
+   * author: Olive Shannon
+   * course: CMPT 220
+   * assignment: lab 2
+   * due date: Febuary 2nd, 2017
+   * version: 1.0
+   */
 import java.util.Scanner;
 public class ex2_1 {
   public static void main(String[] args) {

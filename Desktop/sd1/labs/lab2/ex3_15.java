@@ -1,3 +1,11 @@
+/**
+   * file: ex3_15.java
+   * author: Olive Shannon
+   * course: CMPT 220
+   * assignment: lab 2
+   * due date: Feburary 16th, 2017
+   * version: 1.0
+   */
 import java.util.Scanner;
 public static void main(String[] args) {
   int lottonum = (int)(Math.random()*1000);

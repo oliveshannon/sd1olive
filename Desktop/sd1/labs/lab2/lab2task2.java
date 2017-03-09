@@ -1,3 +1,11 @@
+/**
+   * file: lab2task2.java
+   * author: Olive Shannon
+   * course: CMPT 220
+   * assignment: lab 2
+   * due date: Feburary 16th, 2017
+   * version: 1.0
+   */
 import java.util.Scanner;
 public class lab2task2 {
   public static void main(String[] args) {
