@@ -7,7 +7,7 @@
    * version: 1.3
    */
 import java.util.Scanner;
-public class Driver_pr1 {
+public class Driver_prj1 {
   public static void main(String[] args) {
     int vectorAsize =0;
     int vectorBsize=0;
@@ -22,7 +22,7 @@ public class Driver_pr1 {
     for(int i=0; i < vectorAsize; i++){
       vectorA[i]= input.nextInt();
     } 
-    System.out.println("Enter the data for the first vector: ");
+    System.out.println("Enter the data for the second vector: ");
     for(int i=0; i < vectorBsize; i++){
       vectorB[i]= input.nextInt();
     } 
@@ -35,15 +35,16 @@ public class Driver_pr1 {
     }
   }
   public static double[] convolute(double[] vectorA, double[] vectorB){
-    double[] finalData= new double[(vectorA.length- vectorB.length)-1];
+    double[] finalData= new double[(vectorA.length + vectorB.length)-1];
     for (int index=0; index< finalData.length; index++){
-      for (int shift=0; shift< vectorB.length; shift++){
-        finalData[index]= vectorA[index-shift] * vectorB[index];
-        if (finalData[index] < 0 || finalData[index] > finalData.length){
-          finalData[index]= 0; // this is supposed to replace any out of bounds
-        }                      // as a 0 in the result. trying to find more
-      }                        // more optimal solutions.
+      for (int shift=0; shift< vectorB.length; shift++){ // this is where Im 
+      	int indxshift= index- shift;	// to catch out of bounds exceptions
+        if (indxshift < 0 || indxshift > finalData.length){ // but it isnt
+          indxshift=1;                               //doing its job
+        }
+        finalData[index]= vectorA[indxshift] * vectorB[index]; 
+      }                        
     }
-    return finalData;
+    return finalData[];
   }
 }
