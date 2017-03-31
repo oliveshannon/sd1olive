@@ -4,7 +4,7 @@
    * course: CMPT 220
    * assignment: project 1
    * due date: March 30th, 2017
-   * version: 1.3
+   * version: 4
    */
 import java.util.Scanner;
 public class Driver_prj1 {
@@ -28,23 +28,17 @@ public class Driver_prj1 {
     } 
     double[] finalData= convolute(vectorA, vectorB);
     for (int i=0; i< finalData.length; i++){
-      finalData[i]= Math.round(finalData[i]);
-    }
-    for (double e: finalData){
-      System.out.print(" " + e);
+      System.out.print(Math.round(finalData[i]));
     }
   }
   public static double[] convolute(double[] vectorA, double[] vectorB){
     double[] finalData= new double[(vectorA.length + vectorB.length)-1];
     for (int index=0; index< finalData.length; index++){
-      for (int shift=0; shift< vectorB.length; shift++){ // this is where Im 
-      	int indxshift= index- shift;	// to catch out of bounds exceptions
-        if (indxshift < 0 || indxshift > finalData.length){ // but it isnt
-          indxshift=1;                               //doing its job
-        }
-        finalData[index]= vectorA[indxshift] * vectorB[index]; 
+      for (int shift=0; shift< vectorB.length; shift++){ 
+        if (((index-shift)>=0) &&  ((index-shift)< vectorA.length));
+        finalData[index] += vectorA[index-shift] * vectorB[shift]; 
       }                        
     }
-    return finalData[];
+    return finalData;
   }
 }
