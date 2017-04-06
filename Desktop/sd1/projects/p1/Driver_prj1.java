@@ -20,22 +20,23 @@ public class Driver_prj1 {
     double[] vectorB= new double[vectorBsize];
     System.out.println("Enter the data for the first vector: ");
     for(int i=0; i < vectorAsize; i++){
-      vectorA[i]= input.nextInt();
+      vectorA[i]= input.nextDouble();
     } 
     System.out.println("Enter the data for the second vector: ");
     for(int i=0; i < vectorBsize; i++){
-      vectorB[i]= input.nextInt();
+      vectorB[i]= input.nextDouble();
     } 
     double[] finalData= convolute(vectorA, vectorB);
     for (int i=0; i< finalData.length; i++){
-      System.out.print(Math.round(finalData[i]));
+      System.out.print(Math.round(finalData[i]) + " ");
     }
+    System.out.println();
   }
   public static double[] convolute(double[] vectorA, double[] vectorB){
     double[] finalData= new double[(vectorA.length + vectorB.length)-1];
     for (int index=0; index< finalData.length; index++){
       for (int shift=0; shift< vectorB.length; shift++){ 
-        if (((index-shift)>=0) &&  ((index-shift)< vectorA.length));
+        if (((index-shift)>=0) &&  ((index-shift)< vectorA.length))
         finalData[index] += vectorA[index-shift] * vectorB[shift]; 
       }                        
     }
