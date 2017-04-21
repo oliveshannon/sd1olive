@@ -7,7 +7,7 @@
    * version: 1.0
    */
 import java.util.Scanner;
-public class ex7_9 {
+  public class ex7_9 {
   public static void main(String[] args){
     double[] numArray= new double[10];
     Scanner input = new Scanner(System.in);
