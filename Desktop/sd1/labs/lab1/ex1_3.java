@@ -2,7 +2,7 @@
    * file: ex1_3.java
    * author: Olive Shannon
    * course: CMPT 220
-   * assignment: lab 2
+   * assignment: lab 1
    * due date: Febuary 2nd, 2017
    * version: 1.0
    */

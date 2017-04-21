@@ -2,7 +2,7 @@
    * file: ex2_6.java
    * author: Olive Shannon
    * course: CMPT 220
-   * assignment: lab 2
+   * assignment: lab 1
    * due date: Febuary 2nd, 2017
    * version: 1.0
    */
@@ -21,6 +21,6 @@ public class ex2_6 {
     int TensPlace = (number - OnesPlace) % 100; 
     int HundredsPlace = (number - TensPlaceB) / 100;  
     int sum = HundredsPlace + TensPlace + OnesPlace;
-    System.out.println("The sum of the digits is" + sum);
+    System.out.println("The sum of the digits is " + sum);
   }
 }
