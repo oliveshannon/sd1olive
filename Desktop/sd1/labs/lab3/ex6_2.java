@@ -6,7 +6,7 @@
    * due date: Feburary 23th, 2017
    * version: 1.0
    */
-import java.util.Scanner
+import java.util.Scanner;
 public class ex6_2 {
   // This method is the main part of the program
   public static void main(String [] args) {

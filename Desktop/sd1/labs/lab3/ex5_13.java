@@ -12,7 +12,7 @@ public class ex5_13 {
     while (Math.pow(n+1, 3) < 120000) {
       n++;
     }
-    System.out.print("The largest integer that, cubed, is
-      less than 12000 is: " = n);
+    System.out.print("The largest integer that, cubed, "
+    + "is less than 12000 is: " + n);
   }
 }

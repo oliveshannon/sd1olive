@@ -9,10 +9,10 @@
 public class ex5_12 {
   public static void main(String[] args) {
     int n= 0;
-    while (Math.pow(n,2) <= 12000) {
+    while (Math.pow(n, 2) <= 12000) {
       n++;
     }
-    System.out.print("The smallest integer n such that 
-      n squared is greater than 12,000 is: " + n);
+    System.out.print("The smallest integer n such that" + 
+      " n squared is greater than 12,000 is: " + n);
   }
 }
