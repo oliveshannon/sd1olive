@@ -7,6 +7,7 @@
    * version: 1.0
    */
 import java.util.Scanner;
+public class ex3_15 {
 public static void main(String[] args) {
   int lottonum = (int)(Math.random()*1000);
   Scanner input = new Scanner(System.in);
@@ -27,5 +28,6 @@ public static void main(String[] args) {
   // I could find no viable way to complete the rest of this program, 
   // despite some intensive googling and thinking, so i have left it
   // blank
-  else if ()
+  else if () {}
+}
 }

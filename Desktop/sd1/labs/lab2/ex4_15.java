@@ -13,7 +13,7 @@ public class ex4_15 {
     Scanner input = new Scanner(System.in);
     String letter = input.nextLine();
     char character = letter.charAt(0);
-    character = Character.toUpperCase(ch);
+    character = Character.toUpperCase(character);
     int num = 0;
     //The If statement figures out which number the entered letter will correspond to.
     if (Character.isLetter(character)) {

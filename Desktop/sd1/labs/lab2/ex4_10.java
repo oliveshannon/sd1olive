@@ -40,7 +40,7 @@ public class ex4_10 {
     // Prompt the user to answer questions
     System.out.print("Is your birthday in Set1?\n");
     System.out.print(set1);
-    System.out.print("\nEnter Y for Yes and N for No: ");
+    System.out.println("\nEnter Y for Yes and N for No: ");
     String s = input.nextLine();
     char answer = s.charAt(0);
     if (Character.toUpperCase(answer) == 'Y')
@@ -48,7 +48,7 @@ public class ex4_10 {
     // Prompt the user to answer questions
     System.out.print("Is your birthday in Set2?\n");
     System.out.print(set2);
-    System.out.print("\nEnter Y for Yes and N for No: ");
+    System.out.println("\nEnter Y for Yes and N for No: ");
     s = input.nextLine();
     answer = s.charAt(0);
     if (Character.toUpperCase(answer) == 'Y')
@@ -56,7 +56,7 @@ public class ex4_10 {
     // Prompt the user to answer questions
     System.out.print("Is your birthday in Set3?\n");
     System.out.print(set3);
-    System.out.print("\nEnter Y for Yes and N for No: ");
+    System.out.println("\nEnter Y for Yes and N for No: ");
     s = input.nextLine();
     answer = s.charAt(0);
     if (Character.toUpperCase(answer) == 'Y')
@@ -64,7 +64,7 @@ public class ex4_10 {
     // Prompt the user to answer questions
     System.out.print("Is your birthday in Set4?\n");
     System.out.print(set4);
-    System.out.print("\nEnter Y for Yes and N for No: ");
+    System.out.println("\nEnter Y for Yes and N for No: ");
     s = input.nextLine();
     answer = s.charAt(0);
     if (Character.toUpperCase(answer) == 'Y')
@@ -72,7 +72,7 @@ public class ex4_10 {
     // Prompt the user to answer questions
     System.out.print("Is your birthday in Set5?\n");
     System.out.print(set5);
-    System.out.print("\nEnter Y for Yes and N for No: ");
+    System.out.println("\nEnter Y for Yes and N for No: ");
     s = input.nextLine();
     answer = s.charAt(0);
     if (Character.toUpperCase(answer) == 'Y')

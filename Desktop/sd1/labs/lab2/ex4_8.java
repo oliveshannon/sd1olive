@@ -6,7 +6,7 @@
    * due date: Feburary 28th, 2017
    * version: 1.0
    */
-import java.util.scanner;
+import java.util.Scanner;
 public class ex4_8 {
   public static void main(String[] args) {
     System.out.print("Enter an ASCII code (a number between 0 and 127): ");
