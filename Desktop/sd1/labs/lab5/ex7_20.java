@@ -12,22 +12,27 @@ public class ex7_20 {
     double [] numList = new double[10];
     System.out.print("Enter 10 numbers: ");
     Scanner input = new Scanner(System.in);
-    for (int i=0; i< numList.length; i++)
+    for (int i=0; i< numList.length; i++){
       numList[i]= input.nextDouble();
-    selectionSort(numList);
-    for (double i: numList)
-      System.out.print(i + " ");
-    System.out.println();
   }
-  public static void selectionSort(double[] sortedList){
-    for (int i = sortedList.length - 1; i>= 0; i--) {
-      double max = sortedList[i];
+  selectionSort(numList);
+    for (int i=0; i< numList.length; i++){
+      System.out.print(numList[i] + " ");
+    }
+  }
+  public static void selectionSort(double[] list){
+    for (int i = list.length - 1; i>= 0; i--) {
+      double max = list[i];
       int maxIndex = i;
       for (int j=i-1; j>= 0; j--) {
-        if (max < sortedList[j]) {
-          max= sortedList[j];
+        if (max < list[j]) {
+          max= list[j];
           maxIndex = j;
         }
+      }
+      if (maxIndex != i){
+        list[maxIndex]= list[i];
+        list[i]= max;
       }
     }
   }

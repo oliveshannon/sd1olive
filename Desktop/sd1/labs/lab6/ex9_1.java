@@ -9,16 +9,16 @@
 public class ex9_1 {
 public static void main(String[] args) {
     Rectangle rectangleOne= new Rectangle(4, 40);
-	Rectangle rectangleTwo = new Rectangle(3.5, 35.9);
-	System.out.println("Info for Rectangle One: ");
-	System.out.println("Width: " + rectangleOne.width);
-	System.out.println("Height: " + rectangleOne.height);
-	System.out.println("Area: " + rectangleOne.getArea());
-	System.out.println("Perimeter: " + rectangleOne.getPerimeter());
-	System.out.println("Info for Rectangle Two: ");
-	System.out.println("Width: " + rectangleTwo.width);
-	System.out.println("Height: " + rectangleTwo.height);
-	System.out.println("Area: " + rectangleTwo.getArea());
-	System.out.println("Perimeter: " + rectangleTwo.getPerimeter());
+    Rectangle rectangleTwo = new Rectangle(3.5, 35.9);
+    System.out.println("Info for Rectangle One: ");
+    System.out.println("Width: " + rectangleOne.width);
+    System.out.println("Height: " + rectangleOne.height);
+    System.out.println("Area: " + rectangleOne.getArea());
+    System.out.println("Perimeter: " + rectangleOne.getPerimeter());
+    System.out.println("Info for Rectangle Two: ");
+    System.out.println("Width: " + rectangleTwo.width);
+    System.out.println("Height: " + rectangleTwo.height);
+    System.out.println("Area: " + rectangleTwo.getArea());
+    System.out.println("Perimeter: " + rectangleTwo.getPerimeter());
   }
 }

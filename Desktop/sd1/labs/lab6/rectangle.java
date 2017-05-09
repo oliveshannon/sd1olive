@@ -5,6 +5,16 @@
    * assignment: lab 6, ex9_1
    * due date: April 20th, 2017
    * version: 1.0
+   UML DIAGRAM:
+   ---------------------
+   | class: Rectangle |
+   --------------------
+   | width: double
+   | height: double
+   ---------------------
+   | getArea(): returns double
+   | getPerimeter(): returns double
+   ------------------------------
    */
 public class Rectangle {
   double width;

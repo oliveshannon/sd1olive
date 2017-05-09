@@ -10,21 +10,21 @@ import java.util.Scanner;
 public class ex9_13 {
   public static void main(String[] args){
     System.out.println("Input the number of rows and columns in your array");
-	Scanner input = new Scanner(System.in);
-	int rows = input.nextInt();
-	int columns = input.nextInt();
-	double[][] array= new double [rows][columns];
-	System.out.println("Enter the data for the array");
-	for (int i=0; i < array.length; i++){
-	  for (int j=0; j < array[i].length; j++) {
-	    array[i][j]= input.nextDouble();
-	  }
-	}
-	Location userArray= locateLargest(array);
-	System.out.println("The largest element is " + userArray.maxValue + " located at " 
-	+ "(" + userArray.row + ", " + userArray.column + ")");
-  }
-  public static Location locateLargest(double[][] a){
+    Scanner input = new Scanner(System.in);
+    int rows = input.nextInt();
+    int columns = input.nextInt();
+    double[][] array= new double [rows][columns];
+    System.out.println("Enter the data for the array");
+    for (int i=0; i < array.length; i++){
+      for (int j=0; j < array[i].length; j++) {
+        array[i][j]= input.nextDouble();
+        }
+      }
+    Location userArray= locateLargest(array);
+    System.out.println("The largest element is " + userArray.maxValue + " located at " 
+    + "(" + userArray.row + ", " + userArray.column + ")");
+    }
+    public static Location locateLargest(double[][] a){
     return new Location(a);
-  }
+    }
 }

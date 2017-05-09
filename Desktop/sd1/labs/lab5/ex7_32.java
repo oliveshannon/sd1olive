@@ -9,19 +9,19 @@
 import java.util.Scanner;
 public class ex7_32 {
   public static void main(String[] args){
-    System.out.print("Enter List: ");
-    System.in= new Scanner(System.in);
-    int[] list= new int[input.nextInt()];
+    System.out.print("Enter a list of size 10: ");
+    Scanner input= new Scanner(System.in);
+    int[] list= new int[10];
     for (int i=0; i< list.length; i++) {
       list[i] = input.nextInt();
     }
-    int sortedList= partition(list);
-    for (int e: sortedList) {
+    partition(list);
+    for (int e: list) {
       System.out.print(" " + e);
     }
     System.out.println();
   }
-  public static int partition(int[] list) {
+  public static void partition(int[] list) {
     int minIndex=0; 
     int maxIndex= list.length - 1;
     int i= minIndex;
@@ -42,6 +42,5 @@ public class ex7_32 {
         j--;
           }
         }
-    return list;
   }
 }
